@@ -11,12 +11,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700&display=swap" rel="stylesheet">
 
     <style>
-      body{
-          margin: 0px;
-          padding: 0px;
-          font-family: 'Libre Franklin', sans-serif;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale;
+      html {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      }
+      body {
+        flex-grow: 1;
+      }
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Libre Franklin', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
       }
       .chartMenu {
         width: 100vw;
@@ -49,18 +58,20 @@
         align-items: center;
         justify-content: left;
         padding: 10px;
+        oveflow: clip;
       }
       .chartBox {
         display: inline-block;
         position: relative;
-/*        width: 95%;*/
-        width: 800px;
-        height: 450px;
+        width: 95%;
+        height: 90%; 
+/*        width: 800px;
+        height: 450px;*/
         min-height: 200px;
         min-width: 200px;
         padding: 0px;
       }
-      p1{
+      p1 {
         position: relative;
         font-family: Libre Franklin, sans-serif; 
         color: rgb(53, 83, 108);
@@ -69,7 +80,7 @@
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
       }
-      p2{
+      p2 {
         font-family: Libre Franklin, sans-serif; 
         color: rgb(53, 83, 108);
         font-size: 12px;
@@ -83,8 +94,9 @@
       <p>Suicide attacks<span>carried out by women</span></p>
       <p1>Suicide attacks carried out by women, 2014 - 21.</p1>
     </div>
-    <div class="chartMenu"></div>
+
     <div class="chartCard">
+
       <div class="chartBox">
         <canvas id="myChart"></canvas>
         <p2>Source: OECD/SWAC based on ACLED (2022) data.</p2>
