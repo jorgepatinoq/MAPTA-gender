@@ -13,6 +13,7 @@
         min-height: 100%;
         display: flex;
         flex-direction: column;
+        overflow: hidden;
       }
       body{
         flex-grow: 1;
@@ -24,12 +25,11 @@
       }
       .chartMenu {
         width: 100vw;
-        height: 10px;
+        height: 20px;
       }
       .chartMenu p {
         padding: 10px;
         font-size: 20px;
-        /* background-color: gray; */
         font-family: Libre Franklin, sans-serif; 
         font-size: 1.25rem;
         font-weight: 700;
@@ -40,7 +40,6 @@
       .chartMenu span {
         padding: 10px;
         font-size: 20px;
-        /* background-color: gray; */
         font-family: Libre Franklin, sans-serif; 
         font-size: 1.25rem;
         font-weight: 700;
@@ -60,10 +59,11 @@
       .chartBox {
         display: inline-block;
         position: relative;
-        width: 80vw;
-        height: 80vh;
+        width: 95%;
+        height: 90%;
+        min-height: 200px;
+        min-width: 200px;
         padding: 0px;
-        border-radius: 4px;
       }
       p1{
         position: relative;
